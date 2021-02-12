@@ -1,4 +1,5 @@
 import { call, put } from 'redux-saga/effects';
+import { goToHome } from '../modules/posts';
 
 export const createPromiseSaga = (type, promiseCreator) => {
   const [SUCCESS, ERROR] = [`${type}_SUCCESS`, `${type}_ERROR`];
